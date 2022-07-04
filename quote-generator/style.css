@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,600&display=swap'); 
+
+body{
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("cool-background.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.quote-container {
+    width: auto;
+    max-width: 900px;
+    padding: 20px 30px;
+     border-radius: 15px;
+    box-shadow: 0 10px 10px 10px black;
+    background: rgba(255, 255, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+     
+}
+
+.quote-text{
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.quote-author{
+    font-size: 20px;
+    font-style: italic;
+    padding: 5px;
+}
+
+.button-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.generate{
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 0.5;
+    box-shadow: 0 2px gray;
+    background-color: black;
+    color: aliceblue;
+   
+}
+.generate:hover{
+    background-color: aliceblue;
+    color: black;
+    filter: brightness(130%);
+}
+.generate:active {
+    transform: translate(0, 0.5px);
+    box-shadow: 0 2px white;
+}
+.twitter{
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+   }
+   .fa-twitter{
+       font-size: 20px;
+   }
+.twitter:hover{
+    color: #38a1f3;
+}
+/* .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid blue;
+    border-right: 16px solid green;
+    border-bottom: 16px solid red;
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+/* Media Query */
+
+@media screen and (max-width:1000px) {
+    .quote-container{
+        margin: auto 10px;
+    }
+    .quote-text{
+        font-size: 20px;
+    }
+}
